@@ -1,7 +1,19 @@
+/* Align h1 to the right */
 h1 {
-    color: #4ac1f7;
+    color: #4ac1f7; /* Light blue text color */
+    text-align: right; /* Align the text to the right */
+    margin-right: 20px; /* Optional: Add some space from the right edge */
 }
-.mylogo{
+h2 {
+    color: #4ac1f7; /* Light blue text color */
+    text-align: right; /* Align the text to the right */
+    margin-right: 30px; /* Optional: Add some space from the right edge */
+}
+/* Style for the image */
+.mylogo {
     height: 300px;
     width: auto;
+    display: block;
+    margin-left: auto; /* Push the image to the right */
+    margin-right: 0;
 }

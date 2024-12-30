@@ -1,0 +1,92 @@
+/* General Styling for the Resources Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    text-align: center; /* Center-align overall content */
+}
+
+.resources {
+    padding: 20px;
+}
+
+/* Styling for the Main Heading */
+.resources h1 {
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+/* Subtitle/Intro Text */
+.resources p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Category Sections */
+.categories section {
+    margin: 40px 0;
+}
+
+/* Category Titles */
+.categories h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Resource Cards */
+.resource-cards {
+    display: flex;
+    flex-wrap: wrap; /* Make the cards responsive */
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Card Heading */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+}
+
+/* Card Description */
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Card Link */
+.card a {
+    text-decoration: none;
+    color: #0056b3; /* Blue color for links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.card a:hover {
+    color: #004494; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resource-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

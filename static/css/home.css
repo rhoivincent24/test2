@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFE8;
+    color: #333;
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #FFD4D4; /* Match your navbar background */
+    height: 100vh; /* Full height */
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero h1, .hero h2 {
+    color: #000;
+    letter-spacing: 1.5px;
+    margin: 10px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4AC1F7;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+    background-color: #026aa7;
+}
+
+/* Hero image styling */
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

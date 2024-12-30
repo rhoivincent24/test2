@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<h1>{{ resource.title }}</h1>
+<p>{{ resource.description }}</p>
+<p><strong>Created on:</strong> {{ resource.created_at|date:"M d, Y" }}</p>
+<a href="{% url 'resource_list' %}">Back to Resources</a>
+  <video width="320" height="240" controls>
+    <source src="{{ resource.video.url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br><br>
+  <a href="{% url 'resource_update' resource.pk %}">Edit</a>
+  <a href="{% url 'resource_delete' resource.pk %}">Delete</a>
+{% endblock %}
